@@ -6,8 +6,31 @@
  */
 #include <iostream>
 #include <vector>
-#include "src/problems/GenerateParenthsis.cpp"
+#include "src/problems/MergeKSortedLists.cpp"
 using namespace std;
+void testMergeKSortedLists()
+{
+	Solution * one = new Solution();
+	ListNode * r1 = new ListNode(1);
+	ListNode * r2 = new ListNode(2);
+	vector<ListNode*> * lists;
+	lists->push_back(r1);
+	lists->push_back(r2);
+	ListNode * result = one->mergeKLists(*lists);
+
+}
+int main()
+{
+	testMergeKSortedLists();
+	//testValidParentheses();
+	//testRemoveRemoveNthNodeFromEndofList();
+	return 0;
+}
+
+
+
+
+/*
 void testGenerateParenthsis()
 {
 	Solution * one = new Solution();
@@ -19,18 +42,7 @@ void testGenerateParenthsis()
 	}
 
 }
-int main()
-{
-	testGenerateParenthsis();
-	//testValidParentheses();
-	//testRemoveRemoveNthNodeFromEndofList();
-	return 0;
-}
 
-
-
-
-/*
 void testValidParentheses()
 {
 	Solution * one = new Solution();
