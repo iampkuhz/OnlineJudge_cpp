@@ -8,23 +8,10 @@
 #include <vector>
 #include <algorithm>
 using namespace std;
-
-class ListNode {
-public:
-	int val;
-	ListNode * next;
-	ListNode(){
-		val = 0;
-		next = NULL;
-	}
-	ListNode(int v){
-		val = v;
-		next = NULL;
-	}
-	ListNode(int v, ListNode * nex){
-		val = v;
-		next = nex;
-	}
+struct ListNode {
+     int val;
+     ListNode *next;
+     ListNode(int x) : val(x), next(NULL) {}
 };
 struct myComp
 {

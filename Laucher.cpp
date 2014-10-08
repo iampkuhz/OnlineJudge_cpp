@@ -8,6 +8,7 @@
 #include <vector>
 #include "src/problems/MergeKSortedLists.cpp"
 using namespace std;
+/*
 void testMergeKSortedLists()
 {
 	Solution * one = new Solution();
@@ -18,7 +19,7 @@ void testMergeKSortedLists()
 	lists->push_back(r2);
 	ListNode * result = one->mergeKLists(*lists);
 
-}
+}*/
 int main()
 {
 	testMergeKSortedLists();
