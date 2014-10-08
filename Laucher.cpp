@@ -6,9 +6,27 @@
  */
 #include <iostream>
 #include <vector>
-#include "src/problems/MergeKSortedLists.cpp"
+#include "src/problems/SwapNodesInPairs.cpp"
 using namespace std;
+void testSwapNodesInPairs()
+{
+	Solution *one = new Solution();
 
+	ListNode * result = one->swapPairs();
+}
+int main()
+{
+	//testMergeKSortedLists();
+	//testValidParentheses();
+	//testRemoveRemoveNthNodeFromEndofList();
+	return 0;
+}
+
+
+
+
+/*
+ *
 void testMergeKSortedLists()
 {
 	Solution * one = new Solution();
@@ -37,18 +55,7 @@ void testMergeKSortedLists()
 		result = result->next;
 	}
 }
-int main()
-{
-	testMergeKSortedLists();
-	//testValidParentheses();
-	//testRemoveRemoveNthNodeFromEndofList();
-	return 0;
-}
-
-
-
-
-/*
+ *
 void testGenerateParenthsis()
 {
 	Solution * one = new Solution();
