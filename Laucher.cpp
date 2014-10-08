@@ -8,18 +8,35 @@
 #include <vector>
 #include "src/problems/MergeKSortedLists.cpp"
 using namespace std;
-/*
+
 void testMergeKSortedLists()
 {
 	Solution * one = new Solution();
 	ListNode * r1 = new ListNode(1);
-	ListNode * r2 = new ListNode(2);
-	vector<ListNode*> * lists;
-	lists->push_back(r1);
-	lists->push_back(r2);
-	ListNode * result = one->mergeKLists(*lists);
+	ListNode * next = new ListNode(4);
+	r1->next = next;
+	ListNode * tmp = new ListNode(5);
+	next->next = tmp;
 
-}*/
+	ListNode * r2 = new ListNode(2);
+	next = new ListNode(3);
+	r2->next = next;
+	tmp = new ListNode(6);
+	next->next = tmp;
+	vector<ListNode*> * lists = new vector<ListNode*>;
+	//cerr << "r1:" << r1->val << endl;
+	//cerr << "r2:" << r2->val << endl;
+	lists->push_back(r1);
+	//cerr << "lists size:" << lists->size() << endl;
+	lists->push_back(r2);
+	//cerr << "lists size:" << lists->size() << endl;
+	ListNode * result = one->mergeKLists(*lists);
+	while(result != NULL)
+	{
+		cout << result->val << " ";
+		result = result->next;
+	}
+}
 int main()
 {
 	testMergeKSortedLists();
