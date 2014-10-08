@@ -19,11 +19,11 @@ struct myComp
 {
 	bool operator ()(const ListNode* s1, const ListNode* s2)
 	{
-		if(s1 == NULL || s2 == NULL)
+		if(s1 == NULL)
 			return false;
-		if(s1->val > s2->val)
+		else if(s2 == NULL)
 			return true;
-		return false;
+		return s1->val > s2->val;
 	}
 };
 class Solution {
@@ -38,20 +38,25 @@ public:
     	while(lists.size() > 0)
     	{
     		int last = lists.size()-1;
-    		cerr << "last:" << last << endl;
+    		/*
+    		cout << "list heads:" ;
+    		for(int i = 0 ; i <= last ; i ++)
+    		{
+    			if(lists[i] == NULL)
+    				cout<< "# ";
+    			else cout << lists[i]->val << " ";
+    		}cout << endl;*/
     		if(lists[0] == NULL)
     		{
     			pop_heap(lists.begin(), lists.end(), myComp());
     			lists.pop_back();
     			continue;
     		}
-    		if(last > 0)
-    			cerr << lists[0]->val << "--" << lists[1]->val << endl;
-    		else cerr << lists[0]->val << "--"  << endl;
-    		int minValue = lists[0]->val;
-    		cerr << "minvalue:" << minValue << endl;
     		// min tree to last
     		pop_heap(lists.begin(), lists.end(), myComp());
+    		ListNode * lastNode = lists[last];
+			lists.pop_back();
+    		int minValue = lastNode->val;
     		//cerr << "minvalue:" << minValue << " size:" << lists.size()<< endl;
     		if(head == NULL){
     			head = new ListNode(minValue);
@@ -59,28 +64,23 @@ public:
     		}
     		else{
     			ListNode * next = new ListNode(minValue);
-    			cerr << next->val << endl;
     			tmp->next = next;
     			tmp = next;
     		}
-    		if(lists[last]->next == NULL)
+    		if(lastNode->next != NULL)
     		{
-    			cerr << "*****:" << lists[last]->val << endl;
-    			lists.pop_back();
-    		}
-    		else{
-    			cerr << last << " list value0:" << lists[last]->val << " " << lists[last]->next->val << endl;
-    			lists[last] = lists[last]->next;
-    			lists.push_back(lists[last]);
+    			//cerr << last << " list value0:" << lastNode->val << " " << lastNode->next->val << endl;lastNode = lastNode->next;
+    			lists.push_back(lastNode->next);
     			push_heap(lists.begin(), lists.end(), myComp());
     		}
-
     	}
+    	/*
     	tmp = head;
     	cout <<"head:" << head->val << endl;
-    	while(tmp != NULL)
+    	while(tmp != NULL){
     		cout << tmp->val << " ";
-    	cout << endl;
+    		tmp = tmp->next;
+    	}cout << endl;*/
     	return head;
     }
 };

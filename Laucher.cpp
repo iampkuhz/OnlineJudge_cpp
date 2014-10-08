@@ -8,29 +8,39 @@
 #include <vector>
 #include "src/problems/MergeKSortedLists.cpp"
 using namespace std;
-
+ListNode * Array2ListNode(int nums[], int len)
+{
+	if(len < 1)
+		return NULL;
+	ListNode * head = new ListNode(nums[0]);
+	ListNode * tmp = head;
+	for(int i = 1 ; i < len; i ++)
+	{
+		ListNode * next = new ListNode(nums[i]);
+		tmp->next = next;
+		tmp = tmp->next;
+	}
+	return head;
+}
 void testMergeKSortedLists()
 {
 	Solution * one = new Solution();
-	ListNode * r1 = new ListNode(1);
-	ListNode * next = new ListNode(4);
-	r1->next = next;
-	ListNode * tmp = new ListNode(5);
-	next->next = tmp;
-
-	ListNode * r2 = new ListNode(2);
-	next = new ListNode(3);
-	r2->next = next;
-	tmp = new ListNode(6);
-	next->next = tmp;
 	vector<ListNode*> * lists = new vector<ListNode*>;
-	//cerr << "r1:" << r1->val << endl;
-	//cerr << "r2:" << r2->val << endl;
-	lists->push_back(r1);
-	//cerr << "lists size:" << lists->size() << endl;
-	lists->push_back(r2);
-	//cerr << "lists size:" << lists->size() << endl;
+	int num1 [] = {-10,-9,-9,-3,-1,-1,0};
+	ListNode * r = Array2ListNode(num1, 7);
+	lists->push_back(r);
+	lists->push_back((new ListNode(-5)));
+	lists->push_back((new ListNode(4)));
+	lists->push_back((new ListNode(-8)));
+	lists->push_back(NULL);
+	int num2 [] = {-9,-6,-5,-4,-2,2,3};
+	r = Array2ListNode(num2, 7);
+	lists->push_back(r);
+	int num3 [] = {-3,-3,-2,-1,0};
+	r = Array2ListNode(num3, 5);
+	lists->push_back(r);
 	ListNode * result = one->mergeKLists(*lists);
+
 	while(result != NULL)
 	{
 		cout << result->val << " ";
