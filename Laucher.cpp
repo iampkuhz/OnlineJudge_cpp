@@ -6,8 +6,27 @@
  */
 #include <iostream>
 #include <vector>
-#include "src/problems/SwapNodesInPairs.cpp"
+#include "src/problems/ImplementstrStr.cpp"
 using namespace std;
+void testRemoveDumplicatesFromSortedArray()
+{
+	Solution * one =
+			new Solution();
+	one->test();
+}
+int main()
+{
+	testRemoveDumplicatesFromSortedArray();
+	//testSwapNodesInPairs();
+	//testMergeKSortedLists();
+	//testValidParentheses();
+	//testRemoveRemoveNthNodeFromEndofList();
+	return 0;
+}
+
+
+
+/*
 ListNode * Array2ListNode(int nums[], int len)
 {
 	if(len < 1)
@@ -33,19 +52,7 @@ void testSwapNodesInPairs()
 		cout << result->val << " ";
 		result = result->next;
 	}
-}
-int main()
-{
-	testSwapNodesInPairs();
-	//testMergeKSortedLists();
-	//testValidParentheses();
-	//testRemoveRemoveNthNodeFromEndofList();
-	return 0;
-}
-
-
-
-
+}*/
 /*
  *
 void testMergeKSortedLists()
