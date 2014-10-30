@@ -6,17 +6,14 @@
  */
 #include <iostream>
 #include <vector>
-#include "src/problems/ImplementstrStr.cpp"
+#include "src/problems/SubstringwithConcatenationofAllWords.cpp"
 using namespace std;
-void testRemoveDumplicatesFromSortedArray()
-{
-	Solution * one =
-			new Solution();
-	one->test();
-}
+
 int main()
 {
-	testRemoveDumplicatesFromSortedArray();
+	Solution * one = new Solution();
+	one->test();
+	//testRemoveDumplicatesFromSortedArray();
 	//testSwapNodesInPairs();
 	//testMergeKSortedLists();
 	//testValidParentheses();
