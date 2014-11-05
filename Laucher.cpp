@@ -6,7 +6,7 @@
  */
 #include <iostream>
 #include <vector>
-#include "src/problems/SubstringwithConcatenationofAllWords.cpp"
+#include "src/problems/NextPermutation.cpp"
 using namespace std;
 
 int main()
