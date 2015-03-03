@@ -6,7 +6,7 @@
  */
 #include <iostream>
 #include <vector>
-#include "src/problems/SearchInsertPosition.cpp"
+#include "src/problems/SudokuSolver.cpp"
 using namespace std;
 
 int main()
