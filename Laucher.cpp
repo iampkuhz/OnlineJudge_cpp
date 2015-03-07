@@ -8,7 +8,7 @@
 #include <vector>
 #include <strstream>
 
-#include "src/problems/N-QueensII.cpp"
+#include "src/problems/MergeIntervals.cpp"
 using namespace std;
 
 int main()
