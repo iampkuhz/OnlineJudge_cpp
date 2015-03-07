@@ -8,7 +8,7 @@
 #include <vector>
 #include <strstream>
 
-#include "src/problems/WildcardMatching.cpp"
+#include "src/problems/N-QueensII.cpp"
 using namespace std;
 
 int main()
