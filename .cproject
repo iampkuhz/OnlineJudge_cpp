@@ -47,8 +47,18 @@
 							</tool>
 						</toolChain>
 					</folderInfo>
+					<folderInfo id="cdt.managedbuild.config.gnu.cross.exe.debug.1110545953.567157611" name="/" resourcePath="PassedProblems">
+						<toolChain id="cdt.managedbuild.toolchain.gnu.cross.exe.debug.1005465851" name="Cross GCC" superClass="cdt.managedbuild.toolchain.gnu.cross.exe.debug" unusedChildren="">
+							<tool id="cdt.managedbuild.tool.gnu.cross.c.compiler.1457801821" name="Cross GCC Compiler" superClass="cdt.managedbuild.tool.gnu.cross.c.compiler.888372682"/>
+							<tool id="cdt.managedbuild.tool.gnu.cross.cpp.compiler.402495170" name="Cross G++ Compiler" superClass="cdt.managedbuild.tool.gnu.cross.cpp.compiler.328808458"/>
+							<tool id="cdt.managedbuild.tool.gnu.cross.c.linker.141153983" name="Cross GCC Linker" superClass="cdt.managedbuild.tool.gnu.cross.c.linker.453472284"/>
+							<tool id="cdt.managedbuild.tool.gnu.cross.cpp.linker.40519019" name="Cross G++ Linker" superClass="cdt.managedbuild.tool.gnu.cross.cpp.linker.505168361"/>
+							<tool id="cdt.managedbuild.tool.gnu.cross.archiver.874901590" name="Cross GCC Archiver" superClass="cdt.managedbuild.tool.gnu.cross.archiver.1891927721"/>
+							<tool id="cdt.managedbuild.tool.gnu.cross.assembler.2065234192" name="Cross GCC Assembler" superClass="cdt.managedbuild.tool.gnu.cross.assembler.2031815423"/>
+						</toolChain>
+					</folderInfo>
 					<sourceEntries>
-						<entry excluding="problems|src.problems|src" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
+						<entry excluding="PassedProblems|problems|src.problems|src" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src"/>
 					</sourceEntries>
 				</configuration>
@@ -124,4 +134,12 @@
 		</scannerConfigBuildInfo>
 	</storageModule>
 	<storageModule moduleId="org.eclipse.cdt.core.LanguageSettingsProviders"/>
+	<storageModule moduleId="refreshScope" versionNumber="2">
+		<configuration configurationName="Debug">
+			<resource resourceType="PROJECT" workspacePath="/OnlineJudge_cpp"/>
+		</configuration>
+		<configuration configurationName="Release">
+			<resource resourceType="PROJECT" workspacePath="/OnlineJudge_cpp"/>
+		</configuration>
+	</storageModule>
 </cproject>

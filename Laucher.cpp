@@ -8,7 +8,7 @@
 #include <vector>
 #include <strstream>
 
-#include "src/problems/MergeIntervals.cpp"
+#include "src/problems/UniquePaths.cpp"
 using namespace std;
 
 int main()
