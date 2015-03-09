@@ -8,7 +8,7 @@
 #include <vector>
 #include <strstream>
 
-#include "src/problems/UniquePaths.cpp"
+#include "src/problems/Sqrt_x.cpp"
 using namespace std;
 
 int main()
