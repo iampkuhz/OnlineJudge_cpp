@@ -32,6 +32,18 @@ private:
 		Reccur(firHalf, secHalf + 1, str + ")", thres);
 		Reccur(firHalf + 1, secHalf, str + "(", thres);
 	}
+
+	void test()
+	{
+		Solution * one = new Solution();
+		int size;
+		while(cin >> size){
+			vector<string> result = one->generateParenthesis(size);
+			for(unsigned int i = 0; i < result.size(); i ++)
+				cout << result.at(i) << endl;
+		}
+
+	}
 };
 
 

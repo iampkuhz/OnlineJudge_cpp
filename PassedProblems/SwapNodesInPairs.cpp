@@ -43,6 +43,34 @@ public:
     	}
     	return result;
     }
+
+
+    void testSwapNodesInPairs()
+    {
+    	Solution *one = new Solution();
+    	int nums[] = {1,2,3,4};
+    	ListNode * input = Array2ListNode(nums, 4);
+    	ListNode * result = one->swapPairs(input);
+    	while(result != NULL)
+    	{
+    		cout << result->val << " ";
+    		result = result->next;
+    	}
+    }
+    ListNode * Array2ListNode(int nums[], int len)
+    {
+    	if(len < 1)
+    		return NULL;
+    	ListNode * head = new ListNode(nums[0]);
+    	ListNode * tmp = head;
+    	for(int i = 1 ; i < len; i ++)
+    	{
+    		ListNode * next = new ListNode(nums[i]);
+    		tmp->next = next;
+    		tmp = tmp->next;
+    	}
+    	return head;
+    }
 };
 
 

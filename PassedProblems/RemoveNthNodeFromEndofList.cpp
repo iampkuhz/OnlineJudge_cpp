@@ -39,6 +39,35 @@ public:
     		return head;
     	}
     }
+    void test()
+    {
+    	Solution * one = new Solution();
+    	ListNode* head = new ListNode();
+    	head->val = 1;
+    	ListNode* next = new ListNode();
+    	next->val = 2;
+    	head->next = next;
+    	next->next = new ListNode();
+
+    	next = next->next;
+    	next->val = 3;
+    	next->next = new ListNode();
+
+    	next = next->next;
+    	next->val = 4;
+    	next->next = new ListNode();
+
+    	next = next->next;
+    	next->val = 5;
+    	next->next = NULL;
+
+    	ListNode *result = one->removeNthFromEnd(head, 2);
+    	while(result != NULL)
+    	{
+    		cout << result->val << " ";
+    		result = result->next;
+    	}
+    }
 };
 
 

@@ -50,6 +50,15 @@ public:
     	}
     	return 0;
     }
+
+    void test()
+    {
+    	Solution * one = new Solution();
+    	string input;
+    	while(cin >> input)
+    		cout << one->isValid(input) << endl;
+    	return;
+    }
 };
 
 

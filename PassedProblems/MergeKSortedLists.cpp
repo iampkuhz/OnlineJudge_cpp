@@ -83,5 +83,45 @@ public:
     	}cout << endl;*/
     	return head;
     }
+    void test()
+    {
+    	Solution * one = new Solution();
+    	vector<ListNode*> * lists = new vector<ListNode*>;
+    	int num1 [] = {-10,-9,-9,-3,-1,-1,0};
+    	ListNode * r = Array2ListNode(num1, 7);
+    	lists->push_back(r);
+    	lists->push_back((new ListNode(-5)));
+    	lists->push_back((new ListNode(4)));
+    	lists->push_back((new ListNode(-8)));
+    	lists->push_back(NULL);
+    	int num2 [] = {-9,-6,-5,-4,-2,2,3};
+    	r = Array2ListNode(num2, 7);
+    	lists->push_back(r);
+    	int num3 [] = {-3,-3,-2,-1,0};
+    	r = Array2ListNode(num3, 5);
+    	lists->push_back(r);
+    	ListNode * result = one->mergeKLists(*lists);
+
+    	while(result != NULL)
+    	{
+    		cout << result->val << " ";
+    		result = result->next;
+    	}
+    }
+    ListNode * Array2ListNode(int nums[], int len)
+    {
+    	if(len < 1)
+    		return NULL;
+    	ListNode * head = new ListNode(nums[0]);
+    	ListNode * tmp = head;
+    	for(int i = 1 ; i < len; i ++)
+    	{
+    		ListNode * next = new ListNode(nums[i]);
+    		tmp->next = next;
+    		tmp = tmp->next;
+    	}
+    	return head;
+    }
 };
+
 
