@@ -8,7 +8,7 @@
 #include <vector>
 #include <strstream>
 
-#include "src/problems/MergeSortedArray.cpp"
+#include "src/problems/Pascal_sTriangle.cpp"
 using namespace std;
 
 int main()
