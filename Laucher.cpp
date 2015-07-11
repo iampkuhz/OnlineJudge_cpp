@@ -8,7 +8,7 @@
 #include <vector>
 #include <strstream>
 
-#include "src/problems/Pascal_sTriangle.cpp"
+#include "src/problems/128.longest-consecutive-sequence.cpp"
 using namespace std;
 
 int main()

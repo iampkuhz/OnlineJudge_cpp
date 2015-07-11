@@ -32,6 +32,7 @@
 							<tool id="cdt.managedbuild.tool.gnu.cross.cpp.compiler.328808458" name="Cross G++ Compiler" superClass="cdt.managedbuild.tool.gnu.cross.cpp.compiler">
 								<option id="gnu.cpp.compiler.option.optimization.level.1319187812" name="Optimization Level" superClass="gnu.cpp.compiler.option.optimization.level" useByScannerDiscovery="false" value="gnu.cpp.compiler.optimization.level.none" valueType="enumerated"/>
 								<option id="gnu.cpp.compiler.option.debugging.level.1008720468" name="Debug Level" superClass="gnu.cpp.compiler.option.debugging.level" useByScannerDiscovery="false" value="gnu.cpp.compiler.debugging.level.max" valueType="enumerated"/>
+								<option id="gnu.cpp.compiler.option.preprocessor.def.1428291881" name="Defined symbols (-D)" superClass="gnu.cpp.compiler.option.preprocessor.def" useByScannerDiscovery="false" valueType="definedSymbols"/>
 								<inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.2044577108" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
 							</tool>
 							<tool id="cdt.managedbuild.tool.gnu.cross.c.linker.453472284" name="Cross GCC Linker" superClass="cdt.managedbuild.tool.gnu.cross.c.linker"/>
@@ -45,16 +46,6 @@
 							<tool id="cdt.managedbuild.tool.gnu.cross.assembler.2031815423" name="Cross GCC Assembler" superClass="cdt.managedbuild.tool.gnu.cross.assembler">
 								<inputType id="cdt.managedbuild.tool.gnu.assembler.input.289088030" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
 							</tool>
-						</toolChain>
-					</folderInfo>
-					<folderInfo id="cdt.managedbuild.config.gnu.cross.exe.debug.1110545953.567157611" name="/" resourcePath="PassedProblems">
-						<toolChain id="cdt.managedbuild.toolchain.gnu.cross.exe.debug.1005465851" name="Cross GCC" superClass="cdt.managedbuild.toolchain.gnu.cross.exe.debug" unusedChildren="">
-							<tool id="cdt.managedbuild.tool.gnu.cross.c.compiler.1457801821" name="Cross GCC Compiler" superClass="cdt.managedbuild.tool.gnu.cross.c.compiler.888372682"/>
-							<tool id="cdt.managedbuild.tool.gnu.cross.cpp.compiler.402495170" name="Cross G++ Compiler" superClass="cdt.managedbuild.tool.gnu.cross.cpp.compiler.328808458"/>
-							<tool id="cdt.managedbuild.tool.gnu.cross.c.linker.141153983" name="Cross GCC Linker" superClass="cdt.managedbuild.tool.gnu.cross.c.linker.453472284"/>
-							<tool id="cdt.managedbuild.tool.gnu.cross.cpp.linker.40519019" name="Cross G++ Linker" superClass="cdt.managedbuild.tool.gnu.cross.cpp.linker.505168361"/>
-							<tool id="cdt.managedbuild.tool.gnu.cross.archiver.874901590" name="Cross GCC Archiver" superClass="cdt.managedbuild.tool.gnu.cross.archiver.1891927721"/>
-							<tool id="cdt.managedbuild.tool.gnu.cross.assembler.2065234192" name="Cross GCC Assembler" superClass="cdt.managedbuild.tool.gnu.cross.assembler.2031815423"/>
 						</toolChain>
 					</folderInfo>
 					<sourceEntries>
@@ -142,4 +133,5 @@
 			<resource resourceType="PROJECT" workspacePath="/OnlineJudge_cpp"/>
 		</configuration>
 	</storageModule>
+	<storageModule moduleId="org.eclipse.cdt.internal.ui.text.commentOwnerProjectMappings"/>
 </cproject>
