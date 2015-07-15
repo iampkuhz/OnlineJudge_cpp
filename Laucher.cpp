@@ -8,7 +8,7 @@
 #include <vector>
 #include <strstream>
 
-#include "src/problems/128.longest-consecutive-sequence.cpp"
+#include "src/problems/149-max-points-on-a-line.cpp"
 using namespace std;
 
 int main()
