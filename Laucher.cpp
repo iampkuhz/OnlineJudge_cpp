@@ -8,12 +8,12 @@
 #include <vector>
 #include <strstream>
 
-#include "src/problems/149-max-points-on-a-line.cpp"
+#include "src/problems/202-happy-number.cpp"
+//#include "src/test/sort_qsort.cpp"
 using namespace std;
 
 int main()
 {
-
 	Solution * one = new Solution();
 	one->test();
 	return 0;
