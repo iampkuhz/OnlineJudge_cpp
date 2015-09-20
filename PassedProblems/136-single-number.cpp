@@ -7,7 +7,7 @@
 
 #include <iostream>
 #include <vector>
-#include <tr1/unordered_map>
+#include <map>
 using namespace std;
 
 class Solution {
