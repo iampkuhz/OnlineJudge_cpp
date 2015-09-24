@@ -13,3 +13,7 @@
 5. `runtime error`可能是数组访问越界,除0，爆栈,很小可能能是内存不够
 
 6. `map`一定要find找到后再map[i]. 如果不存在且直接用map[i]会报错
+
+7. `220-contains-duplicate-iii.cpp` 虽然过了,但是特别慢
+
+8.`222-count-complete-tree-nodes.cpp`看了答案
