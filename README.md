@@ -16,4 +16,8 @@
 
 7. `220-contains-duplicate-iii.cpp` 虽然过了,但是特别慢
 
-8.`222-count-complete-tree-nodes.cpp`看了答案
+8.`222`,`229`,`236`看了答案
+
+9. `229-majority-element-ii.cpp`为什么算法是正确的？
+
+10. ``

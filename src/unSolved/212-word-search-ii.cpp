@@ -9,7 +9,7 @@
 #include <vector>
 #include <set>
 #include <string>
-#include "../dataInit.cpp"
+#include "../dataType/dataInit.cpp"
 using namespace std;
 
 class Node{
