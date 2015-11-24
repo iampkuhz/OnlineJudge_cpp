@@ -8,15 +8,13 @@
 #include <vector>
 #include <strstream>
 
-#include "src/problems/239-sliding-window-maximum.cpp"
+#include "src/problems/260-single-number-iii.cpp"
 //#include "src/test/sort_qsort.cpp"
 using namespace std;
 
-int main()
-{
-	Solution * one = new Solution();
-	one->test();
-	return 0;
-}
-
-
+//int main()
+//{
+//	Solution * one = new Solution();
+//	one->test();
+//	return 0;
+//}

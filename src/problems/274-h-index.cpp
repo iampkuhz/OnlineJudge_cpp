@@ -36,6 +36,10 @@ public:
             return size;
         return 0;
     }
+
+    void test(){
+
+    }
 };
 
 
