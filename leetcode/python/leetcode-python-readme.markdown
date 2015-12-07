@@ -1,9 +1,16 @@
 
 ## log
+19. `Remove Nth Node From End of List`, 一次过
+
+> python 没有指针，全部是对象
+
+18. `4-sum` 和 `3-sum` 一样，一次过
 
 15. `3-sum` 排序后二分查找超时
 
->
+> python尽量别写函数，如果数组不能复用的话复制给函数的时候很花时间，思路对了，但是实现方式不好
+> 数组'num'内部排序'num.sort()'
+
 14. `longest-common-prefix`, 网上找的直接所有的和第一个字符串匹配比二分查找更快, 可能是因为二分查找的切片代价比较大?
 
 > for 迭代器 `for i in range(len(s))` 在外部定义的i不会改变值
