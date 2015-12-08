@@ -1,5 +1,24 @@
 
 ## log
+
+27. `27-remove-element.py` 小bug太多，提交了3次，都是语法错误`++` 和变量名写错
+
+26. `26-remove-duplicates-from-sorted-array.py` 提交了好几次，小bug非常多
+
+25. `25-reverse-nodes-in-k-group.py` 一个小bug，提交两次过，但是bug查了好久，增加了测试类`comMethod`把`list`转换成`ListNode`
+
+24. `24-swap-nodes-in-pairs.py` 两次过，小bug, 画图做
+
+22. `22-generate-parentheses.py`，一次过，本地调试一次
+
+> python 调用函数的时候千万别忘了`self.method()`!!!
+
+21. `21-merge-two-sorted-lists.py`, 一次过，本地没调
+
+20. `iValid Parentheses`, 判断括号是闭合的，python代码很多bug，本地调了几次，网上提交一次过
+
+> python 字典初始化`myDict={'a':1,'b':2}`
+
 19. `Remove Nth Node From End of List`, 一次过
 
 > python 没有指针，全部是对象
