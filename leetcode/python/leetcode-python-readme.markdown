@@ -1,6 +1,22 @@
 
 ## log
 
+32. `32-longest-valid-parentheses.py` 匹配过了，提交了很多次，网上有使用stack的方法，速度快
+
+> 1. 几个边界条件需要考虑清楚
+
+30. `30-osubstring-with-concatenation-of-all-words.py` 搜的答案
+
+> 1. hash方法已经不能过了
+> 2. hash方法的网上例子写的很简洁`[f(x) for x in xrange(len(t)) if p(x)]`
+
+29. `29-divide-two-integers.py` 自己实现除法
+
+> 1. python int 最小值`-(i<<31)`, int 最大值`(i<<31)-1`
+> 2. python 位运算符优先级小于"+-",`1<<31-1`等于`1<31`
+
+28. `28-implement-strstr.py` KMP 找子串
+
 27. `27-remove-element.py` 小bug太多，提交了3次，都是语法错误`++` 和变量名写错
 
 26. `26-remove-duplicates-from-sorted-array.py` 提交了好几次，小bug非常多

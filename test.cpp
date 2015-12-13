@@ -1,28 +1,20 @@
-#include <stdio.h>
-#include <string.h>
-#include <stdlib.h>
-struct my{
-	int id;
-	char c;
-	my * next;
-};
-int main()
-{
-	struct my fir;
-	fir.next = NULL;
-	struct my *p = (my*)malloc(sizeof(my)), *p2 = (my*)malloc(sizeof(my));
-	p->c = 's';
-	p->id = 2;
-	p->next = p2;
-	p2->c = 'l';
-	p2->id = 4;
-	p2->next = NULL;
+#include<stdio.h>
+#include<graphics.h>
+#include<conio.h>
 
-	struct my *q;
-	q = p;
-	while(q != NULL){
-		printf("%d %c\n", q->id, q->c);
-		q = q->next;
-	}
-    return 0;
+int main(){
+   int gd = DETECT,gm;
+   int x ,y ,radius=80;
+   initgraph(&gd, &gm, "C:\\TC\\BGI");
+   /* Initialize center of circle with center of screen */
+   x = getmaxx()/2;
+   y = getmaxy()/2;
+
+   outtextxy(x-100, 50, "CIRCLE Using Graphics in C");
+   /* Draw circle on screen */
+   circle(x, y, radius);
+
+   getch();
+   closegraph();
+   return 0;
 }
