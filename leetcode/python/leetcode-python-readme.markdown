@@ -1,6 +1,27 @@
 
 ## log
 
+42. `42.trapping-rain-water.py`, 本地调试一次，提交一次过
+
+> 看到网上的思路后修改代码，可是比之前的还慢
+
+41. `41.first-missing-positive.py` 看答案过的
+
+40. `40-combination-sum-ii.py` 怎么防止`1,1,1`中第1、2,1、3被取两次？
+
+> 我的思路：过了例子，但是没有证明，直观是对的。保留移出栈的最后一个元素，如果下一个要加入栈的元素和之前最后一次移入的元素一样，则说明重复了
+
+38. `38-count-and-say.py` 把数字读出来，不难，看清题意
+
+37. `37-sudoku-solver.py` dfs的时候注意几个返回位置
+
+> 有高效解法：:
+
+36. `36-valid-sudoku.py` 注意读题，没看清题意
+
+> if语句写在一行的方式`if clause:continue;`
+> 不能对str类型使用`s[2]='f'`进行赋值，需要新建一个str，但是leetcode上直接赋值不会报错
+
 35. `35-search-insert-position.py` 一次过，速度快
 
 34. `34-search-for-a-range.py` 一次过， 但是时间很慢，因为做了两次二分查找来找出左右边界
