@@ -3,6 +3,18 @@
 
 283. `283-move-zeroes.py`, 不难，一次过
 
+59. `spiral-matrix-ii`, 54题类似，生成方形二维回行数组，比54题简单，本地调试了一下，提交一次过，注意边界
+
+58. `58-length-of-last-word.py` python内置的split函数。自己实现的效率不好。这一题调了好多次才过，下次要重新做
+
+57. `57-insert-interval.py` 过的方法不是最好的，先加进入排序再输出
+
+56. `56-merge-intervals.py 
+
+55. `55-jump-game.py` 45题的简化版本
+
+54. `spiral-matrix`,回行数组遍历，考虑好边界情况
+
 53. `53-maximum-subarray.py` 一次过
 
 52. `52-n-queens-ii.py`， 两种方法，都是一次过
