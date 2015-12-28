@@ -3,6 +3,24 @@
 
 283. `283-move-zeroes.py`, 不难，一次过
 
+68. `69-sqrtx.py` 实现整数的开方，二分查找，一次过
+:w
+67. `67-add-binary.py` 调了几次才过，代码写的不好,有一行的写法
+
+66.`66-plus-one.py` 模拟+1,一次过
+
+65.`65-valid-number.py` 调用python内置函数
+
+64.`64-minimum-path-sum.py`,最优路径，递归，注意边界单独算，调了3次过
+
+63.`63-unique-paths-ii.py` 比62题多设置一个路障，动规，注意边界，一次过
+
+62. `62-unique-paths.py` (m,n)方格的走法，动规，一次过
+
+61. `61-rotate-list.py`，注意旋转方向，两次过，没问题
+
+60.`60-permutation-sequence.py` 快速算每一位存的是第几大的数，一次过
+
 59. `spiral-matrix-ii`, 54题类似，生成方形二维回行数组，比54题简单，本地调试了一下，提交一次过，注意边界
 
 58. `58-length-of-last-word.py` python内置的split函数。自己实现的效率不好。这一题调了好多次才过，下次要重新做
