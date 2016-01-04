@@ -3,6 +3,23 @@
 
 283. `283-move-zeroes.py`, 不难，一次过
 
+82. `82-remove-duplicates-from-sorted-list-ii.py` 看答案过的，还需要再做
+
+
+80.`80-remove-duplicates-from-sorted-array-ii.py` 两次过，本地无调试，注意原数组也要修改
+
+79.`79-word-search.py` 本地调试了很多次，提交一次过，注意细节
+
+78. `78-subsets.py` 一次过，不难
+
+77. `77-combinations.py` 一次过，不难
+
+76. `76-minimum-window-substring.py` 看答案过的，调试了2次，提交一次过，需要再写
+
+> python 字典的用法
+
+75.`75-sort-colors.py` 看了最优解法（速度上没有什么优势）
+
 74. `74-search-a-2d-matrix.py` 一次过，效率还行，注意剪枝，O(m+n)时间复杂度
 
 73. `73-set-matrix-zeroes.py` 将0所在行、列全部置0，o(m+n)的空间复杂度，不是空间最优
