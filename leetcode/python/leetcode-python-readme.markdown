@@ -3,6 +3,19 @@
 
 283. `283-move-zeroes.py`, 不难，一次过
 
+87.`87-scramble-string.py` 一个重要剪枝没考虑，一个小错误一直没发现，重做
+
+86. `86.partition-list.py` 简单，注意细节，改了2次交过了
+
+85.`85-maximal-rectangle.py` 有84题很好做，边界条件提交了2次
+
+84. `84-largest-rectangle-in-histogram.py` 自己写的双向数组做的(两次过)，看答案发现更好的方法（3次过）
+
+> stack判断是否为空 `while not stk:`
+> list.pop放在句子中可能先pop，`(lt[-1]-lt.pop())===0`为倒数第1个元素减最后一个元素, `lt.pop-lt[01]`为原来的最后一个元素减去倒数第二个元素
+
+83. `83-remove-duplicates-from-sorted-list.py` 一次过，本地没调试
+
 82. `82-remove-duplicates-from-sorted-list-ii.py` 看答案过的，还需要再做
 
 
