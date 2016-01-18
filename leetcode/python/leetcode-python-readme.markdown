@@ -3,6 +3,42 @@
 
 283. `283-move-zeroes.py`, 不难，一次过
 
+105.`105-construct-binary-tree-from-preorder-and-inorder-traversal.py`,通过先序序列、中序序列重建二叉树，开始用函数递归做超内存，改用函数内小函数做+字典查找位置过了. 开始超内存是因为老是函数调用切片会增大内存，后来使用下标就好了
+
+104.`104-maximum-depth-of-binary-tree.py` 一次过，简单
+
+103. `103-binary-tree-zigzag-level-order-traversal.py`102的变形，简单
+
+102. `102-binary-tree-level-order-traversal.py` 提交三次，主要是对Queue的调用不熟悉,简单
+
+101. `101-symmetric-tree.py` 3次过，注意边界，简单
+
+100.`100-same-tree.py` 算一次过，（函数名写错了多提交一次），简单
+
+99.`99-recover-binary-search-tree.py`,O（n）复杂度过了，调了8次, 参考网上答案实现了O（1）空间复杂度的方法，没有提升时间
+
+98.`98-validate-binary-search-tree.py` 一次过
+
+97.
+
+96.`96-unique-binary-search-trees.py`，3次过，看答案有好的解法，参考答案一次过
+
+95.`95-unique-binary-search-trees-ii.py` 提交14次才过，各种细节没有考虑到
+
+94.`94-binary-tree-inorder-traversal.py` 递归方法一次过，非递归方法4次过
+
+93. `93-restore-ip-addresses.py`,两个边界没考虑清楚，提交三次,不难
+
+92.`92-reverse-linked-list-ii.py`,一次过，不难，想好链表交换的细节
+
+91.`91-decode-ways.py` 思路对，还是细节，字符和数字？提交5次过
+
+90.`90-subsets-ii.py` 思路对，细节没考虑好，提交4次过
+
+89.`89-gray-code.py` 提交两次，边界每考虑全，简单
+
+88.`88-merge-sorted-array.py` 方法对，细节没考虑请，提交了3次
+
 87.`87-scramble-string.py` 一个重要剪枝没考虑，一个小错误一直没发现，重做
 
 86. `86.partition-list.py` 简单，注意细节，改了2次交过了
