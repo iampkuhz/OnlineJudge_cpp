@@ -23,6 +23,7 @@ return true, as there exist a root-to-leaf path 5->4->11->2 which sum is 22.
 #         self.left = None
 #         self.right = None
 
+# 用s替代可以减少用时82ms->60ms
 class Solution(object):
     def hasPathSum(self, root, sum):
         """
@@ -35,5 +36,5 @@ class Solution(object):
             if root1 == None: return False
             s = sum1-root1.val
             if root1.left == None and root1.right == None: return False if s != 0 else True
-            return find(root1.left, sum1-root1.val) or find(root1.right, sum1-root1.val)
+            return find(root1.left, s) or find(root1.right, s)
         return find(root, sum)

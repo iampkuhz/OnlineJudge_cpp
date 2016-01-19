@@ -3,6 +3,24 @@
 
 283. `283-move-zeroes.py`, 不难，一次过
 
+113.`113-path-sum-ii.py`,输出路径和等于目标值的路径，不难，2次过，时间效率很好
+
+112.`112-path-sum.py` 递归边界考虑不清，7次过，但是不难
+
+111.`111-minimum-depth-of-binary-tree.py` BFS比DFS速度要快,看答案想到BFS，都是改了好多次过，None的判断出问题
+
+> `collections.deque`比`Queue.Queue()`快
+
+110.`110-balanced-binary-tree.py` 判断二叉树是否是平衡的，递归算，5次过，不难
+
+109.`109-onvert-sorted-list-to-binary-search-tree.py`, 只能单向访问的链表重构成BST树，10次过，效率特别慢;网上发现快速方法,2次过
+
+108.`108-convert-sorted-array-to-binary-search-tree.py`,两次过，简单
+
+107.`107-binary-tree-level-order-traversal-ii.py` 按照节点深度反序输出序列，7次过，速度慢;参考网上方法，速度快，简单，2次过
+
+106'`106-construct-binary-tree-from-inorder-and-postorder-traversal.py`,通过中序序列、后序序列重构二叉树，开始时没考虑清边界条件，2次过
+
 105.`105-construct-binary-tree-from-preorder-and-inorder-traversal.py`,通过先序序列、中序序列重建二叉树，开始用函数递归做超内存，改用函数内小函数做+字典查找位置过了. 开始超内存是因为老是函数调用切片会增大内存，后来使用下标就好了
 
 104.`104-maximum-depth-of-binary-tree.py` 一次过，简单

@@ -20,6 +20,22 @@ Given a singly linked list where elements are sorted in ascending order, convert
 #         self.right = None
 
 
+# 投机方法，280ms
+class Solution(object):
+    def sortedListToBST(self, head):
+        ls=[];
+        while head:
+            ls.append(head.val)
+            head = head.next
+        def bTree(a,b):
+            if a < b : return None
+            m = (a+b)/2
+            root = TreeNode(ls[m])
+            root.left = bTree(a, m-1)
+            root.right = bTree(m+1, b)
+            return root
+        return bTree(0, len(ls)-1)
+
 
 # 速度超级慢，调了很多次才过
 class Solution(object):

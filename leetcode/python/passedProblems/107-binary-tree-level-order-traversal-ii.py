@@ -20,6 +20,16 @@ return its bottom-up level order traversal as:
 ]
 """
 
+# 参考网上方法
+class Solution(object):
+    def levelOrderBottom(self, root):
+        re = []; L = [root]
+        while L and root:
+            re.insert(0, [n.val for n in L])
+            L = [node for N in L for C in (N.left, N.right) if C]
+        return re
+
+
 # Definition for a binary tree node.
 # class TreeNode(object):
 #     def __init__(self, x):
