@@ -15,6 +15,17 @@ For the purpose of this problem, we define empty string as valid palindrome.
 """
 
 
+# 不同re模块，块很多，sn如果是字符串拼接，会超时
+class Solution(object):
+    def isPalindrome(self, s):
+        if s == None: return True
+        sn = []
+        s=s.lower()
+        for x in s:
+            if (x>='a' and x<='z') or (x>='0' and x<='9'):
+                sn.append(x)
+        return sn == sn[::-1]
+
 class Solution(object):
     def isPalindrome(self, s):
         """

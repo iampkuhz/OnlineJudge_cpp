@@ -13,6 +13,7 @@ When s3 = "aadbbcbcac", return true.
 When s3 = "aadbbbaccc", return false.
 """
 
+
 class Solution(object):
     def isInterleave(self, s1, s2, s3):
         """
@@ -25,18 +26,14 @@ class Solution(object):
         if l3 != l1 + l2:return False
         itl = [[-1 for i in range(l2+1)] for j in range(l1+1)]
         itl[0][0] = 1
+        for i in range(l1+1):
+            bk = 0
+            for j in range(l2+1):
+                if i > 0 and s1[i-1] == s3[i+j-1]:
+                    itl[i][j] = max(0, itl[i-1][j])
+                if j > 0 and s2[j-1] == s3[i+j-1]:
+                    itl[i][j] = max(itl[i][j], itl[i][j-1])
+                bk = max(bk, itl[i][j])
+            if bk < 1: return False
+        return True if itl[l1][l2]>0 else False
 
-
-        def dfs(tl3):
-            for tl1 in range(max(0, tl3-l2), min(l1+1,  tl3+1)):
-                tl2 = tl3-tl1
-                if itl[tl1][tl2]>=0:return True if itl[tl1][tl2] == 1 else False
-                re = 0
-                if tl1 > 0 and s1[tl1-1] == s3[tl3-1]:
-                    re = itl[tl1-1][tl2]
-                if tl2 > 0 and s2[tl2-1] == s3[tl3-1]:
-                    re = max(re, itl[tl1][tl2-1])
-                itl[tl1][tl2] = re
-                if( re > 0): return True
-            return False
-        return dfs(l3)

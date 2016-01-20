@@ -3,6 +3,38 @@
 
 283. `283-move-zeroes.py`, 不难，一次过
 
+130.`130-surrounded-regions.py` 宽搜做，深搜会超内存
+
+> 'Runtime Error' 一般是数组越界或者内存溢出
+
+127.`127-word-ladder.py` 单源最短路径，宽搜，双向宽搜+每次选取小的集合扩展，11次过
+
+126.`126-word-ladder-ii.py` 打印所有最短路径点，需要保留最短路径的前一个点，每层结束后才能更新，10次过
+
+125.`125-valid-palindrome.py` 使用list存字符串比字符串拼接速度快很多
+
+124.`124-binary-tree-maximum-path-sum.py`,边界比较多，注意考虑全，4次过
+
+123.`123-best-time-to-buy-and-sell-stock-iii.py` 双向查找，120的加强版,边界条件没考虑，2次过
+
+122.`122-best-time-to-buy-and-sell-stock-ii.py` 贪心，每次取连续上升子序列的头尾买进、买出，6次过
+
+121.`120-triangle.py` 返回值搞错，3次过，没有看清题意
+
+120.`120-triangle.py`递归求，2次过
+
+119. `119-pascals-triangle-ii.py.` 考虑请边界，第i行应该有i+1个数字,7次过
+
+118. `118-pascals-triangle.py` 简单，考虑好递推式，一次过
+
+117. 和116一模一样
+
+116. 116-populating-next-right-pointers-in-each-node.py 3遍过，改用list替代Queue，速度加倍
+
+115. `distinct-subsequences` 子串个数，递归条件没想清，6遍过
+
+114.`114-flatten-binary-tree-to-linked-list.py` 将二叉树先序遍历生成右倾的单子节点二叉树
+
 113.`113-path-sum-ii.py`,输出路径和等于目标值的路径，不难，2次过，时间效率很好
 
 112.`112-path-sum.py` 递归边界考虑不清，7次过，但是不难
@@ -37,7 +69,7 @@
 
 98.`98-validate-binary-search-tree.py` 一次过
 
-97.
+97.`97-interleaving-string.py` 判断s3是否是s1，s2的插值拼接，dp，3次过，不难（之前没做出来，之后2次过)
 
 96.`96-unique-binary-search-trees.py`，3次过，看答案有好的解法，参考答案一次过
 
@@ -72,6 +104,7 @@
 
 82. `82-remove-duplicates-from-sorted-list-ii.py` 看答案过的，还需要再做
 
+81.`81-search-in-rotated-sorted-array-ii.py` 可能非减数组查找指定值，10次过，还看了答案
 
 80.`80-remove-duplicates-from-sorted-array-ii.py` 两次过，本地无调试，注意原数组也要修改
 

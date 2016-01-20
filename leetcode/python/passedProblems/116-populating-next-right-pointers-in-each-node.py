@@ -41,6 +41,22 @@ After calling your function, the tree should look like:
 #         self.right = None
 #         self.next = None
 
+# 不能用`not x`判断是否是None
+class Solution(object):
+    def connect(self, root):
+        if root == None:return
+        ls = [root]
+        while len(ls)>0:
+            nl= []
+            for i in range(len(ls)):
+                if i > 0: ls[i-1].next = ls[i]
+                if None !=  ls[i].left :
+                    nl.append(ls[i].left)
+                if None !=  ls[i].right :
+                    nl.append(ls[i].right)
+            ls = nl
+
+
 class Solution(object):
     def connect(self, root):
         """

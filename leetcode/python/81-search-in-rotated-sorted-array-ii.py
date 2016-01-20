@@ -14,6 +14,7 @@ Write a function to determine if a given target is in the array.
 
 
 
+# 看网上答案,9次过
 class Solution(object):
     def search(self, nums, target):
         """
@@ -21,25 +22,18 @@ class Solution(object):
         :type target: int
         :rtype: bool
         """
-        sz = len(nums)
-        if sz < 1 : return False
-        l, r = 0, sz-1
-        while l <= r:
+        l, r, size = 0, len(nums)-1, len(nums)
+        while l < r:
             m = (l+r)/2
             if nums[m] == target: return True
-            if nums[l] <= target < nums[m]:
-                r = m-1
-            elif nums[r] >= target > nums[m]:
-                l = m+1
-            else: l += 1
+            while l < m and nums[l] == nums[m]:
+                l += 1
+            if nums[l] < nums[m]:
+                if nums[l] <= target < nums[m]:
+                    r = m-1
+                else: l = m+1
+            else:
+                if nums[m] < target < nums[r]:
+                    l = m+1
+                else: r = m-1
         return False
-
-
-
-s=Solution()
-print s.search([1,2,3,4,5],1)
-print s.search([1,2,3,4,5],5)
-print s.search([3,4,5,1,2],3)
-
-
-
