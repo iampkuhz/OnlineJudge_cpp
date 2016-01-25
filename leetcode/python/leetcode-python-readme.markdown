@@ -3,9 +3,55 @@
 
 283. `283-move-zeroes.py`, 不难，一次过
 
-130.`130-surrounded-regions.py` 宽搜做，深搜会超内存
+241.`241-different-ways-to-add-parentheses.py` 看答案12次过
+
+149.`149-max-points-on-a-line.py`, 找平面点共线最多的点数，斜率排序，方法直接，但是代码写的不好，9次过
+
+148.`148-sort-list.py`,3等分快排最合适，2等分会超时，递归记得self.,3次过, 直接数组快排+更新 更快！
+
+147.`147-insertion-sort-list.py`, 速度慢，但是1次过，O（n^2)复杂度
+
+146.`146-lru-cache.py` 4次过，效率一般，网上deque记录历史使用，用dict1记录使用次数，两者联合确定删除哪个元素，方法效率更好（未实现）
+
+145.`145-binary-tree-postorder-traversal.py` 后续遍历的iter，dfs一次过，iter一次过(收到前一个题的答案启发)
+
+144.`144-binary-tree-preorder-traversal.py` dfs一次过，看答案iter2次过（代码排版没对齐错了一次)
+
+143.`143-reorder-list.py`, 用数组存下来再更新，1次过
+
+142.`142-linked-list-cycle-ii.py`,注意初始化，2个指针走，有trick，2次过
+
+141.`141-linked-list-cycle.py`1次过，两个指针走,速度特别慢,网上速度快一点，2次过
+
+140.`140-word-break-ii.py`, 记录单词分割情况，时间效率一般，之前忘了最后return，提交很多次，12次过
+
+139.`139-word-break.py`,4次过，数组记忆的对象没搞清
+
+138.`138-copy-list-with-random-pointer.py`, 2次过，网上方法更简单，2次过
+
+137.`137-single-number-ii.py`,2次过，看答案的方法更好，2次过
+
+136.`136-single-number.py`一次过，Xor
+
+135.
+
+134.`134-gas-station.py`,11次过，其实不难
+
+133.`133-clone-graph.py` 5次过，全部是小错误，函数名写错，调用list(0)
+
+132. `132-palindrome-partitioning-ii.py`求最小的回文子串分割，函数编写有问题，开始2个子函数，后来3个，最后两个，没考虑清楚，9次过
+
+131.`131-palindrome-partitioning.py` 求回文子串分割，2次过（有本地调试）
+
+130.`130-surrounded-regions.py` 宽搜做，深搜会超内存, 看答案，8次过，要再做
 
 > 'Runtime Error' 一般是数组越界或者内存溢出
+
+129.`129-sum-root-to-leaf-numbers.py`求所有路径的路径和，递归，简单，2次过
+
+128.`128-longest-consecutive-sequence.py`,O(n)的复杂度找出连续区间的最大宽度，O（n）的算法要么是开数组做，要么是用map/hashmap/dict做,5次过
+
+> 1. 实际快排+顺序遍历也能过，时间效率貌似还好一点
 
 127.`127-word-ladder.py` 单源最短路径，宽搜，双向宽搜+每次选取小的集合扩展，11次过
 
